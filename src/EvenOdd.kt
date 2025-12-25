@@ -9,7 +9,7 @@ private fun isEvenOdd(number: Int) {
     } else {
         println("The given number is odd")
     }
- }
+}
 
 // Using / by operator
 private fun isEvenOdd2(number: Int) {
@@ -38,12 +38,22 @@ private fun isEvenOdd4(number: Int) {
     }
 }
 
+// Using xor operator
 private fun isEvenOdd5(number: Int) {
     if ((number xor 1) == number + 1) {
         println("The given number is even")
     } else {
         println("The given number is odd")
     }
+}
+
+// Using shift operator
+private fun isEvenOdd6(number: Int) {
+    val temp = (number  shr 1) shl 1
+    if (temp == number)
+        println("Even")
+    else
+        println("Odd")
 }
 
 
